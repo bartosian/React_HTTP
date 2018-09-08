@@ -1,54 +1,11 @@
 import React, { Component } from 'react';
-import Axios from "../../axios";
 
 import './Blog.css';
+import Posts  from './Posts/Posts';
 
 class Blog extends Component {
 
-    state = {
-        posts: [],
-        selectedPost: 0,
-        error: false
-    }
-
-    componentDidMount() {
-        Axios.get("/posts")
-            .then(response => {
-                const posts = response.data.slice(0, 4);
-                const updatedPosts = posts.map(post => {
-                    return {
-                        ...post,
-                        author: "Kiryl"
-                    }
-                });
-                this.setState({
-                    posts: updatedPosts
-                });
-            })
-            .catch(err => {
-                this.setState({
-                    error: true
-                })
-            });
-    }
-
-    postSelectedHandler = (id) => {
-        this.setState({
-            selectedPost: id
-        });
-    }
-
     render () {
-
-
-        let posts = this.state.posts.map(post => {
-            return <Post
-                key={post.id}
-                title={ post.title }
-                author={ post.author }
-                clicked={ () => this.postSelectedHandler(post.id)}
-            />;
-        });
 
         if(this.state.error) posts = <p style={{textAlign: "center" }}>ERROR!</p>;
         return (
@@ -61,9 +18,7 @@ class Blog extends Component {
                         </ul>
                     </nav>
                 </header>
-                <section className="Posts">
-                    { posts }
-                </section>
+                <Posts />
             </div>
         );
     }
