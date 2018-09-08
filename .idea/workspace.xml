@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e2523edf-ca00-45ac-9ba1-cb850654bef7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/axios.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Blog/Blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Blog/Blog.js" afterDir="false" />
-    </list>
+    <list default="true" id="e2523edf-ca00-45ac-9ba1-cb850654bef7" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -42,8 +38,8 @@
       <file leaf-file-name="axios.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/axios.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            <state relative-caret-position="120">
+              <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -224,16 +220,15 @@
       <option name="presentableId" value="Default" />
       <updated>1535922369678</updated>
       <workItem from="1535922371054" duration="4727000" />
-      <workItem from="1535979110298" duration="2303000" />
+      <workItem from="1535979110298" duration="2523000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7030000" />
+    <option name="totallyTimeSpent" value="7250000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="140" y="43" width="1400" height="921" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24945612" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -372,8 +367,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/axios.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        <state relative-caret-position="120">
+          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
         </state>
       </provider>
     </entry>
