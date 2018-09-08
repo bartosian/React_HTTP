@@ -55,7 +55,7 @@ class Blog extends Component {
 
         if(this.state.error) posts = <p style={{textAlign: "center" }}>ERROR!</p>;
         return (
-            <div>
+            <div className="Blog">
                 <header>
                     <nav>
                         <ul>
