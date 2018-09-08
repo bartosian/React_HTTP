@@ -15,8 +15,8 @@ class Blog extends Component {
                 <header>
                     <nav>
                         <ul>
-                            <li><NavLink exact activeStyle={{ color: "red"}} to="/">Home</NavLink></li>
-                            <li><NavLink to={{
+                            <li><NavLink activeStyle={{ color: "red"}} to="/posts">Posts</NavLink></li>
+                            <li><NavLink exact to={{
                                 pathname: "/new-post",
                                 search: "?logged=true"
                             }}>New Post</NavLink></li>
@@ -24,9 +24,9 @@ class Blog extends Component {
                     </nav>
                 </header>
                 <Switch>
-                    <Route path="/" exact component={ Posts }/>
+                    <Route path="/posts" exact component={ Posts }/>
                     <Route path="/new-post" exact component={ NewPost }/>
-                    <Route path="/:id" exact component={ FullPost }/>
+                    <Route path="/posts/:id" exact component={ FullPost }/>
                 </Switch>
             </div>
         );
