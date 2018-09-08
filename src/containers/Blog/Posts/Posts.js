@@ -12,9 +12,7 @@ class Posts extends Component {
     }
 
     postSelectedHandler = (id) => {
-        this.setState({
-            selectedPost: id
-        });
+       this.props.history.push("/" + id);
     }
 
     componentDidMount() {
@@ -43,13 +41,13 @@ class Posts extends Component {
 
         let posts = this.state.posts.map(post => {
             return (
-                <Link key={post.id} to={"/" + post.id}>
-                    <Post
+                /*<Link key={post.id} to={"/" + post.id}>*/
+                    <Post key={post.id}
                     title={ post.title }
                     author={ post.author }
                     clicked={ () => this.postSelectedHandler(post.id)}
                     />
-                </Link>
+                // </Link>
             );
         });
 
