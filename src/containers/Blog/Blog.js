@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
 
 import './Blog.css';
 import Posts  from './Posts/Posts';
@@ -7,7 +8,6 @@ class Blog extends Component {
 
     render () {
 
-        if(this.state.error) posts = <p style={{textAlign: "center" }}>ERROR!</p>;
         return (
             <div className="Blog">
                 <header>
@@ -18,7 +18,8 @@ class Blog extends Component {
                         </ul>
                     </nav>
                 </header>
-                <Posts />
+                <Route path="/" exact render={ () => <h1>Home</h1>}/>
+                <Route path="/new-post" exact render={ () => <h1>Home 2</h1>}/>
             </div>
         );
     }
